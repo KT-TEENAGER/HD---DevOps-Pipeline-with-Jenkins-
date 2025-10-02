@@ -1,0 +1,26 @@
+{
+  "name": "discountmate-api",
+  "version": "1.0.0",
+  "description": "DiscountMate service for calculating discounted prices and managing deals",
+  "main": "src/app.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/app.js",
+    "build": "echo \"No build step for Node API\"",
+    "test": "jest --ci --reporters=default --reporters=jest-junit",
+    "lint": "npx eslint . || true"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^7.0.0",
+    "eslint": "^9.10.0",
+    "jest-junit": "^16.0.0"
+  },
+  "jest-junit": {
+    "outputDirectory": "reports",
+    "outputName": "junit.xml"
+  }
+}
